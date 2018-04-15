@@ -4,7 +4,7 @@
 **Reference:**
 https://github.com/Viglino/Canvas-TextPath
 
-##Demo Online  
+**Demo Online** 
 https://jsfiddle.net/JudeHu/ktgejn2v/  
 
 ## Usage
@@ -17,8 +17,8 @@ var textpath = new maptalks.TextPath(
 		map.getCenter().add(-0.1, 0.1)
         ],
         {
+	 	text: "test123456test123456test中文测试中文测试123456",
 		fontSize: '10000m',	// meter(m) use geoDistance, pixel(px) use pixelDistance
-		text: "test123456test123456test123456test123456test123456",
 		fontFamily: "Arial",
 		symbol:{
 			'lineColor' : 'red',
