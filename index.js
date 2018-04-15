@@ -298,7 +298,7 @@ export class TextPath extends LineString {
 			}
 			
 			const font = fontSize + " " + this.options["fontFamily"];
-			this._paintPolylineTextPath(ctx, points, this.options['text'], font, 
+			this._paintPolylineTextPath(ctx, points, this.options['textName'], font, 
 				this.options["symbol"]['lineColor'],
 				this.options["symbol"]['lineWidth'],
 				lineOpacity
