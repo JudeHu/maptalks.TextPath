@@ -285,7 +285,7 @@ const options = {
 export class TextPath extends LineString {
 	_paintOn(ctx, points, lineOpacity, fillOpacity, dasharray) {
 		delDuplicatePt(points);		//  paint smoothline error when adjacent-points duplicate
-		if (this.options['text']){
+		if (this.options['textName']){
 			let fontSize = this.options["fontSize"];
 			if(this.options["fontSize"].indexOf("px") != -1){
 				fontSize = this.options["fontSize"];
