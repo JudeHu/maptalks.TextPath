@@ -21,8 +21,8 @@ var textpath = new maptalks.TextPath(
 		text: "test123456test123456test123456test123456test123456",
 		fontFamily: "Arial",
 		symbol:{
-		'lineColor' : 'red',
-			      'lineOpacity': 0.9
+			'lineColor' : 'red',
+			'lineOpacity': 0.9
 		}
         }
       ).addTo(layer);
