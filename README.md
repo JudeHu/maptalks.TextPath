@@ -4,7 +4,8 @@
 **Reference:**
 https://github.com/Viglino/Canvas-TextPath
 
-##Demo Online
+##Demo Online  
+https://jsfiddle.net/JudeHu/ktgejn2v/  
 
 ## Usage
 ```javascript
