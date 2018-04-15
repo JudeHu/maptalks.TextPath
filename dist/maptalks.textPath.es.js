@@ -177,13 +177,13 @@ const options = {
 	textJustify: true,
 	textOverflow: "visible",
 	textBaseline: "middle",
-	textStrokeMin: 20
+	textStrokeMin: 40
 };
 
 class TextPath extends LineString {
 	_paintOn(ctx, points, lineOpacity, fillOpacity, dasharray) {
 		delDuplicatePt(points); //  paint smoothline error when adjacent-points duplicate
-		if (this.options['text']) {
+		if (this.options['textName']) {
 			let fontSize = this.options["fontSize"];
 			if (this.options["fontSize"].indexOf("px") != -1) {
 				fontSize = this.options["fontSize"];
@@ -195,7 +195,7 @@ class TextPath extends LineString {
 			}
 
 			const font = fontSize + " " + this.options["fontFamily"];
-			this._paintPolylineTextPath(ctx, points, this.options['text'], font, this.options["symbol"]['lineColor'], this.options["symbol"]['lineWidth'], lineOpacity);
+			this._paintPolylineTextPath(ctx, points, this.options['textName'], font, this.options["symbol"]['lineColor'], this.options["symbol"]['lineWidth'], lineOpacity);
 		} else {
 			originPaintOn.apply(this, arguments);
 		}
