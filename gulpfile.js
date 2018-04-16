@@ -36,7 +36,7 @@ configBrowsers.split(',').forEach(name => {
 });
 
 gulp.task('scripts', () => {
-    return bundler.bundle('index-textPath.js');
+    return bundler.bundle('index.js');
 });
 
 gulp.task('build', ['scripts'], () => {});

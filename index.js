@@ -279,7 +279,7 @@ const options = {
 	textJustify: true,
 	textOverflow: "visible",
 	textBaseline: "middle",
-	textStrokeMin: 20
+	textStrokeMin: 5
 }
 
 export class TextPath extends LineString {
@@ -294,7 +294,9 @@ export class TextPath extends LineString {
 				const index = this.options["fontSize"].indexOf("m");
 				const size = parseFloat(this.options["fontSize"].substring(0, index));
 				const scale = this.getMap().getScale();
-				fontSize = size/scale + "px";
+				fontSize = size/scale;
+				if(fontSize < this.options['textStrokeMin']) return;
+				fontSize += "px";
 			}
 			
 			const font = fontSize + " " + this.options["fontFamily"];
